@@ -1,0 +1,54 @@
+.text-preset {
+  font-family: var(--ff-ibm-plex-sans);
+  letter-spacing: var(--ls-0);
+
+  &--heading {
+    @extend .text-preset;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-heading);
+    line-height: var(--lh-100);
+    letter-spacing: var(--ls-neg-1);
+  }
+
+  &--sub-price {
+    @extend .text-preset;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-sub-price);
+    line-height: var(--lh-100);
+  }
+
+  &--sub-title {
+    @extend .text-preset;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-sub-title);
+    line-height: var(--lh-110);
+  }
+
+  &--body {
+    @extend .text-preset;
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-body);
+    line-height: var(--lh-150);
+  }
+
+  &--footer {
+    @extend .text-preset;
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-footer);
+    line-height: var(--lh-150);
+  }
+
+  &--footer-bold {
+    @extend .text-preset;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-footer);
+    line-height: var(--lh-150);
+  }
+
+  &--button {
+    @extend .text-preset;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-button);
+    line-height: var(--lh-180);
+  }
+}

@@ -1,0 +1,19 @@
+@use "sass:map";
+@use "./variables" as vars;
+
+// breakpoint mixins
+@mixin min-width($breakpoint) {
+  $breakpoint-value: map.get(vars.$breakpoints, $breakpoint);
+
+  @media screen and (min-width: $breakpoint-value) {
+    @content;
+  }
+}
+
+@mixin max-width($breakpoint) {
+  $breakpoint-value: map.get(vars.$breakpoints, $breakpoint);
+
+  @media screen and (max-width: $breakpoint-value) {
+    @content;
+  }
+}

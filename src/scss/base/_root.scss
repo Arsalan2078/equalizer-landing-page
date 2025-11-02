@@ -1,0 +1,39 @@
+@use "../abstracts/z-index" as abs;
+
+:root {
+  // colors
+  --c-cyan: rgb(102, 226, 220);
+  --c-orange: rgb(250, 116, 83);
+  --c-yellow: rgb(255, 185, 100);
+  --c-white: rgb(252, 250, 249);
+  --c-slate: rgb(25, 24, 38);
+
+  // fonts
+  --ff-ibm-plex-sans: "IBM Plex Sans", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-heading: clamp(2.5rem, 1rem + 6.25vw, 4rem);
+  --fs-sub-price: 4rem;
+  --fs-sub-title: 2.5rem;
+  --fs-body: clamp(1rem, 0.875rem + 0.5208vw, 1.125rem);
+  --fs-footer: 1rem;
+  --fs-button: 1.125rem;
+
+  --lh-100: 1;
+  --lh-110: 1.1;
+  --lh-150: 1.5;
+  --lh-180: 1.8;
+
+  --ls-0: 0;
+  --ls-neg-1: -0.0625rem;
+
+  @include abs.min-width("md") {
+    --fs-heading: clamp(4rem, 1.75rem + 4.6875vw, 5.5rem);
+    --fs-body: clamp(1.125rem, 0.9375rem + 0.3906vw, 1.25rem);
+  }
+
+  // root styles
+  color-scheme: light;
+  font-size: 16px;
+}

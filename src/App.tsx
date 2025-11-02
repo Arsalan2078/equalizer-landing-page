@@ -1,24 +1,49 @@
 const App = () => {
   return (
-    <div className="app">
-      We make your music sound extraordinary.
+    <div className="app text-preset--body">
+      <main>
+        <h1 className="text-preset--heading">
+          We make your music sound extraordinary.
+        </h1>
 
-      A system audio equalizer specifically designed for Android and iOS. Freely tune the 
-      way your music sounds with a professional grade parametric EQ & volume mixer. Control 
-      bass, mids, treble, gain control, reverb, and more!
+        <p>
+          A system audio equalizer specifically designed for Android and iOS.
+          Freely tune the way your music sounds with a professional grade
+          parametric EQ & volume mixer. Control bass, mids, treble, gain
+          control, reverb, and more!
+        </p>
 
-      Premium EQ
+        <h2 className="text-preset--sub-title">Premium EQ</h2>
 
-      Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-      your listening experience to a whole new level and access all our incredible features!
+        <p>
+          Get expert-level control with a robust equalizer, volume mixer, and
+          spatial audio. Take your listening experience to a whole new level and
+          access all our incredible features!
+        </p>
 
-      $4 / month
+        <div>$4 / month</div>
 
-      iOS Download
-      Android Download
+        <a href="#" className="text-preset--button">
+          iOS Download
+        </a>
 
-      All rights reserved © Equalizer 2021
-      Have any problems? Contact us via social media or email us at equalizer@example.com
+        <a href="#" className="text-preset--button">
+          Android Download
+        </a>
+      </main>
+
+      <footer className="text-preset--footer">
+        <div>All rights reserved © Equalizer 2021</div>
+        <div>
+          Have any problems? Contact us via social media or email us at{" "}
+          <a
+            href="mailto:equalizer@example.com"
+            className="text-preset--footer-bold"
+          >
+            equalizer@example.com
+          </a>
+        </div>
+      </footer>
     </div>
   );
 };
