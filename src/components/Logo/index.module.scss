@@ -1,0 +1,6 @@
+.logo {
+  > img {
+    width: calc(144 / 16 * 1rem);
+    aspect-ratio: auto;
+  }
+}

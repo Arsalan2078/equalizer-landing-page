@@ -1,0 +1,45 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  border-radius: 0.75rem;
+  padding: 1rem 2rem;
+
+  --_bg-color: var(--bg-color);
+  --_text-color: var(--text-color);
+
+  background-color: var(--_bg-color);
+  color: var(--_text-color);
+
+  transition-property: background-color, color;
+  transition-duration: 0.15s;
+
+  > svg path {
+    fill: var(--_text-color);
+    transition-property: fill;
+    transition-duration: 0.15s;
+  }
+}
+
+.dark {
+  --bg-color: var(--bg-color-button-dark);
+  --text-color: var(--text-color-button-dark);
+
+  &:hover,
+  &:focus {
+    --bg-color: var(--bg-color-button-dark-hover);
+    --text-color: var(--text-color-button-dark-hover);
+  }
+}
+
+.light {
+  --bg-color: var(--bg-color-button-light);
+  --text-color: var(--text-color-button-light);
+
+  &:hover,
+  &:focus {
+    --bg-color: var(--bg-color-button-dark-light);
+    --text-color: var(--text-color-button-dark-light);
+  }
+}

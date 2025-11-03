@@ -8,6 +8,19 @@
   --c-white: rgb(252, 250, 249);
   --c-slate: rgb(25, 24, 38);
 
+  --bg-color-button-dark: var(--c-slate);
+  --text-color-button-dark: var(--c-white);
+  --bg-color-button-dark-hover: var(--c-cyan);
+  --text-color-button-dark-hover: var(--c-slate);
+
+  --bg-color-button-light: var(--c-white);
+  --text-color-button-light: var(--c-slate);
+  --bg-color-button-dark-light: var(--c-yellow);
+  --text-color-button-dark-light: var(--c-slate);
+
+  --text-color-socmed: var(--c-slate);
+  --text-color-socmed-hover: var(--c-orange);
+
   // fonts
   --ff-ibm-plex-sans: "IBM Plex Sans", sans-serif;
   --fw-regular: 400;
