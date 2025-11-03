@@ -1,3 +1,4 @@
+import styles from "./App.module.scss";
 import Button from "./components/Button";
 import Icon from "./components/Icon";
 import Logo from "./components/Logo";
@@ -5,7 +6,7 @@ import SocMed from "./components/SocMed";
 
 const App = () => {
   return (
-    <div className="app text-preset--body">
+    <div className={`${styles.app} text-preset--body`}>
       <header>
         <nav>
           <Logo />
