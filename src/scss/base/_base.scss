@@ -1,0 +1,10 @@
+img {
+  display: block;
+}
+
+a:focus {
+  box-shadow: (
+    0 0 0 calc(3 / 16 * 1rem) var(--c-white),
+    0 0 0 calc(5 / 16 * 1rem) var(--c-slate)
+  );
+}

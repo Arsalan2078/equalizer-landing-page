@@ -1,0 +1,38 @@
+@use "../../scss/abstracts/z-index" as abs;
+
+.footer {
+  padding: 4rem clamp(1.25rem, 0rem + 5.2083vw, 2.5rem);
+}
+
+.grid {
+  display: grid;
+  row-gap: 2rem;
+
+  @include abs.min-width("md") {
+    grid-template-columns: 1fr auto;
+
+    > *:nth-child(1) {
+      grid-column: span 2;
+      align-self: start;
+    }
+  }
+
+  @include abs.min-width("xl") {
+    column-gap: 8rem;
+    grid-template-columns: auto 1fr auto;
+
+    > *:nth-child(1) {
+      grid-column: span 1;
+    }
+  }
+}
+
+.socmeds {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  > li {
+    display: flex;
+  }
+}
