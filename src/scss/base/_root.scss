@@ -24,6 +24,8 @@
   --text-color-socmed: var(--c-slate);
   --text-color-socmed-hover: var(--c-orange);
 
+  --bg-color-subscription: var(--c-orange);
+
   // fonts
   --ff-ibm-plex-sans: "IBM Plex Sans", sans-serif;
   --fw-regular: 400;
@@ -48,6 +50,9 @@
     --fs-heading: clamp(4rem, 1.75rem + 4.6875vw, 5.5rem);
     --fs-body: clamp(1.125rem, 0.9375rem + 0.3906vw, 1.25rem);
   }
+
+  // spacings
+  --x-padding: clamp(1.5rem, 0.5rem + 4.1667vw, 2.5rem);
 
   // root styles
   color-scheme: light;

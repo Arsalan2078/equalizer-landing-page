@@ -1,0 +1,29 @@
+@use "../../scss/abstracts/z-index" as abs;
+
+.header {
+  padding: 4rem var(--x-padding);
+}
+
+.grid {
+  display: grid;
+  row-gap: clamp(4rem, 0rem + 16.6667vw, 8rem);
+
+  > nav {
+    display: flex;
+  }
+}
+
+.content {
+  display: grid;
+  row-gap: 2.5rem;
+
+  @include abs.min-width("md") {
+    > h1 {
+      max-width: clamp(26rem, -22rem + 100vw, 58rem);
+    }
+
+    > p {
+      max-width: clamp(31.5rem, 9.75rem + 45.3125vw, 46rem);
+    }
+  }
+}

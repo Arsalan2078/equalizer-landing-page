@@ -1,0 +1,8 @@
+@use "../../scss/abstracts/z-index" as abs;
+
+.main {
+  @include abs.min-width("md") {
+    padding: 12.5rem var(--x-padding);
+  }
+}
+

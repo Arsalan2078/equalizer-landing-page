@@ -1,0 +1,35 @@
+@use "../../scss/abstracts/z-index" as abs;
+
+.subscription {
+  display: grid;
+  row-gap: 3rem;
+
+  padding: 3rem clamp(1.25rem, -0.5rem + 7.2917vw, 3rem);
+
+  background-color: var(--bg-color-subscription);
+
+  @include abs.min-width("md") {
+    border-radius: 1rem;
+  }
+}
+
+.content {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.info {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttons {
+  display: grid;
+  row-gap: 1rem;
+}

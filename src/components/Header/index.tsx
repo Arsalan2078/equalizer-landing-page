@@ -1,14 +1,15 @@
+import styles from "./index.module.scss";
 import Logo from "../Logo";
 
 const Header = () => {
   return (
-    <header>
-      <div className={`container`}>
+    <header className={`${styles.header}`}>
+      <div className={`${styles.grid} container`}>
         <nav>
           <Logo />
         </nav>
 
-        <div>
+        <div className={`${styles.content}`}>
           <h1 className="text-preset--heading">
             We make your music sound extraordinary.
           </h1>

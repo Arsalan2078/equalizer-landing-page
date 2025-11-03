@@ -1,7 +1,7 @@
 @use "../../scss/abstracts/z-index" as abs;
 
 .footer {
-  padding: 4rem clamp(1.25rem, 0rem + 5.2083vw, 2.5rem);
+  padding: 4rem var(--x-padding);
 }
 
 .grid {

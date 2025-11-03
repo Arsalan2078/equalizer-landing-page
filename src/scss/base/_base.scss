@@ -4,7 +4,7 @@ img {
 
 a:focus {
   box-shadow: (
-    0 0 0 calc(3 / 16 * 1rem) var(--c-white),
-    0 0 0 calc(5 / 16 * 1rem) var(--c-slate)
+    0 0 0 calc(2 / 16 * 1rem) var(--bg-color-app),
+    0 0 0 calc(4 / 16 * 1rem) var(--text-color-app)
   );
 }

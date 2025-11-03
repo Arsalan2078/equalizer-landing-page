@@ -1,5 +1,6 @@
 .button {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   gap: 0.5rem;
 
@@ -8,11 +9,13 @@
 
   --_bg-color: var(--bg-color);
   --_text-color: var(--text-color);
+  --_bg-color-hover: var(--bg-color-hover);
+  --_text-color-hover: var(--text-color-hover);
 
   background-color: var(--_bg-color);
   color: var(--_text-color);
 
-  transition-property: background-color, color;
+  transition-property: background-color, color, box-shadow;
   transition-duration: 0.15s;
 
   > svg path {
@@ -20,26 +23,35 @@
     transition-property: fill;
     transition-duration: 0.15s;
   }
+
+  &:hover,
+  &:focus {
+    background-color: var(--_bg-color-hover);
+    color: var(--_text-color-hover);
+
+    > svg path {
+      fill: var(--_text-color-hover);
+    }
+  }
+
+  &:focus {
+    box-shadow: (
+      0 0 0 calc(2 / 16 * 1rem) var(--_text-color-hover),
+      0 0 0 calc(4 / 16 * 1rem) var(--_bg-color-hover)
+    );
+  }
 }
 
 .dark {
   --bg-color: var(--bg-color-button-dark);
   --text-color: var(--text-color-button-dark);
-
-  &:hover,
-  &:focus {
-    --bg-color: var(--bg-color-button-dark-hover);
-    --text-color: var(--text-color-button-dark-hover);
-  }
+  --bg-color-hover: var(--bg-color-button-dark-hover);
+  --text-color-hover: var(--text-color-button-dark-hover);
 }
 
 .light {
   --bg-color: var(--bg-color-button-light);
   --text-color: var(--text-color-button-light);
-
-  &:hover,
-  &:focus {
-    --bg-color: var(--bg-color-button-dark-light);
-    --text-color: var(--text-color-button-dark-light);
-  }
+  --bg-color-hover: var(--bg-color-button-dark-light);
+  --text-color-hover: var(--text-color-button-dark-light);
 }
