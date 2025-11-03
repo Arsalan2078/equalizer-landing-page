@@ -21,7 +21,9 @@ const App = () => {
           access all our incredible features!
         </p>
 
-        <div>$4 / month</div>
+        <div>
+          <span className="text-preset--sub-price">$4</span> / month
+        </div>
 
         <a href="#" className="text-preset--button">
           iOS Download
