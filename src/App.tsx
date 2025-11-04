@@ -6,9 +6,11 @@ import Main from "./components/Main";
 const App = () => {
   return (
     <div className={`${styles.app} text-preset--body`}>
-      <Header />
-      <Main />
-      <Footer />
+      <div className={`${styles.wrapper}`}>
+        <Header />
+        <Main />
+        <Footer />
+      </div>
     </div>
   );
 };

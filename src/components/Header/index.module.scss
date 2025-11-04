@@ -1,7 +1,26 @@
 @use "../../scss/abstracts/z-index" as abs;
 
 .header {
+  position: relative;
+  z-index: 0;
+
   padding: 4rem var(--x-padding);
+}
+
+.bg {
+  display: none;
+
+  @include abs.min-width("md") {
+    display: block;
+    position: absolute;
+    top: calc(0% - 2.5rem);
+    right: calc(0% - 3.125rem);
+    z-index: -1;
+  }
+
+  @include abs.min-width("xl") {
+    right: 0;
+  }
 }
 
 .grid {

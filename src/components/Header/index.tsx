@@ -1,9 +1,14 @@
 import styles from "./index.module.scss";
 import Logo from "../Logo";
+import bgPattern from "/images/bg-pattern-1.svg";
 
 const Header = () => {
   return (
     <header className={`${styles.header}`}>
+      <div className={`${styles.bg}`}>
+        <img src={bgPattern} alt="" />
+      </div>
+
       <div className={`${styles.grid} container`}>
         <nav>
           <Logo />

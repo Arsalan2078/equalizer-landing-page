@@ -1,14 +1,36 @@
+@use "./scss/abstracts/z-index" as abs;
+
 .app {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+  overflow-x: hidden;
 
   min-height: 100dvh;
+
+  --bg-image-desktop: url("/images/bg-main-desktop.png");
+  --bg-image-tablet: url("/images/bg-main-tablet.png");
+  --bg-image-mobile: url("/images/bg-main-mobile.png");
 
   background-color: var(--bg-color-app);
   color: var(--text-color-app);
 
-  > main {
-    flex: 1;
+  background-image: var(--bg-image-mobile);
+  background-repeat: no-repeat;
+  background-position: calc(100% + 12rem) calc(0% - 12rem);
+
+  @include abs.min-width("md") {
+    background-image: var(--bg-image-tablet);
+    background-position: center calc(0% - 12rem);
   }
+
+  @include abs.min-width("xl") {
+    background-image: var(--bg-image-desktop);
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  margin: 0 auto;
+  width: min(100%, calc(1980 / 16 * 1rem));
 }
